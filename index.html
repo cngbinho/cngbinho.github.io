@@ -43,91 +43,92 @@
     />
 
     <!-- Site Properties -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <title>Albitec - Inicio</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/semantic.min.css"
+      href="semantic/components/reset.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/reset.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../semantic/components/site.css"
+      href="semantic/components/site.css"
     />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/container.css"
+      href="semantic/components/container.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/grid.css"
+      href="semantic/components/grid.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/header.css"
+      href="semantic/components/header.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/image.css"
+      href="semantic/components/image.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/menu.css"
+      href="semantic/components/menu.css"
     />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/divider.css"
+      href="semantic/components/divider.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/dropdown.css"
+      href="semantic/components/dropdown.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/segment.css"
+      href="semantic/components/segment.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/button.css"
+      href="semantic/components/button.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/list.css"
+      href="semantic/components/list.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/icon.css"
+      href="semantic/components/icon.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/sidebar.css"
+      href="semantic/components/sidebar.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../semantic/components/transition.css"
+      href="semantic/components/transition.css"
     />
 
     <style type="text/css">
+    html body {
+      font-family: 'Roboto', sans-serif !important;
+    }
       .hidden.menu {
         display: none;
       }
@@ -211,16 +212,8 @@
           margin-top: 0.5em;
           font-size: 1.5em;
         }
-
-        .hero-image {
-          background-image: url("fundo_index4.jpeg");
-          background-color: #cccccc;
-          height: 500px;
-          width: 400px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          /*position: relative;*/
+        strong.wellcome {
+          color: black
         }
       }
     </style>
@@ -252,17 +245,21 @@
     <div class="pusher">
       <div
         class="ui inverted vertical masthead center aligned segment"
-        style="
-          background-image: url('fundo_index4.jpeg');
-          background-color: #cccccc;
-          height: 100%;
-          width: 100%;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          "
       >
-        <div class="hero-image">
+
+      <div
+      class="ui inverted vertical masthead center aligned segment"
+      style="
+        background-image: url('fundo_index4.jpeg');
+        background-color: #cccccc;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        "
+    >
+        
           <div class="ui container">
             <div class="ui large secondary inverted pointing menu">
               <a class="toc item">
@@ -278,50 +275,96 @@
               </div>
 
               <!--<div class="right item">
-            <i class="facebook f icon">
-          <a class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
-        </div>-->
-            </div>
+              <i class="facebook f icon">
+              <a class="ui inverted button">Log in</a>
+              <a class="ui inverted button">Sign Up</a>
+            </div>-->
           </div>
+          
 
           <div class="ui text container">
-            <h1 class="ui inverted header">
-              Amigo do Deivid Company LTDA.
+            <h1 class="ui inverted header" style="line-height: 0.1">
+              <strong class="wellcome" style="
+              color: #3f3f3f; font-family: 'Roboto', sans-serif;
+              ">
+                Bem vindo á Albitec
+              </strong> </br> 
+              <h2 style="text-align: left; padding-left: 75px; color: #3f3f3f; font-weight: 900">
+                
+                  Sua segurança em primeiro lugar.
+                
+              </h2>
             </h1>
-            <h2>Coloque uma imagem TOP aqui!</h2>
           </div>
         </div>
       </div>
+    </div>
 
       <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
           <div class="row">
             <div class="eight wide column">
-              <h3 class="ui header">We Help Companies and Companions</h3>
-              <p>
-                We can give your company superpowers to do things that they
-                never thought possible. Let us delight your customers and
-                empower your needs...through pure data analytics.
+              <div class="center aligned" style="margin-left: 135px;">
+                  <img
+                    src="alarme.jpg"
+                    class="ui large rounded image"
+                    style="
+                    border-radius: 50%; 
+                    width: 150px;
+                    height: 150px;
+                    border: 2px solid #eee;
+                    margin-left: 70px;
+                    "
+                  />
+                </div> 
+              <h3 class="ui header center aligned">Alarme</h3>
+              <p style="text-align: center;">
+                  Texto explicativo do serviço de Alarme prestado.
               </p>
-              <h3 class="ui header">We Make Bananas That Can Dance</h3>
-              <p>
-                Yes that's right, you thought it was the stuff of dreams, but
-                even bananas can be bioengineered.
+              <div style="margin-left: 135px;">
+                  <img
+                    src="cerca.jpg"
+                    class="ui large rounded image"
+                    style="
+                    border-radius: 50%; 
+                    width: 150px;
+                    height: 150px;
+                    border: 2px solid #eee;
+                    margin-left: 70px;
+                    "
+                  />
+                </div> 
+              <h3 class="ui header center aligned">Cerca elétrica</h3>
+              <p style="text-align: center;">
+                  Texto explicativo do serviço de Cerca elétrica prestado.
               </p>
             </div>
             <div class="six wide right floated column">
-              <img
-                src="assets/images/wireframe/white-image.png"
-                class="ui large bordered rounded image"
-              />
+              <div style="margin-left: 135px;">
+                <img
+                  src="CFTV.jpg"
+                  class="ui large rounded image"
+                  style="
+                  border-radius: 50%; 
+                  width: 150px;
+                  height: 150px;
+                  border: 2px solid #eee;
+                  "
+                />
+              </div>  
+              <h3 class="ui header center aligned">
+                CFTV
+              </h3>
+              <p>
+                Texto explicativo do serviço de CFTV prestado.
+              </p>
             </div>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <div class="center aligned column">
               <a class="ui huge button">Check Them Out</a>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
 
@@ -329,17 +372,17 @@
         <div class="ui equal width stackable internally celled grid">
           <div class="center aligned row">
             <div class="column">
-              <h3>"What a Company"</h3>
-              <p>That is what they all say about us</p>
+              <h3>"Sobre a Albitec"</h3>
+              <p>Um pouco da nossa historia aqui.</p>
             </div>
             <div class="column">
-              <h3>"I shouldn't have gone with their competitor."</h3>
+              <h3>"Nossos parceiros ou outra informação."</h3>
               <p>
                 <img
                   src="assets/images/avatar/nan.jpg"
                   class="ui avatar image"
                 />
-                <b>Nan</b> Chief Fun Officer Acme Toys
+                <b>Empresa A</b>
               </p>
             </div>
           </div>
@@ -348,14 +391,11 @@
 
       <div class="ui vertical stripe segment">
         <div class="ui text container">
-          <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+          <h3 class="ui header">Contatos</h3>
           <p>
-            Instead of focusing on content creation and hard work, we have
-            learned how to master the art of doing nothing by providing massive
-            amounts of whitespace and generic content that can seem massive,
-            monolithic and worth your attention.
+            Dados de contatos aqui.
           </p>
-          <a class="ui large button">Read More</a>
+          <!--<a class="ui large button">Read More</a>
           <h4 class="ui horizontal header divider">
             <a href="#">Case Studies</a>
           </h4>
@@ -366,7 +406,7 @@
             gene splicing and combinatory DNA research, but our bananas can
             really dance.
           </p>
-          <a class="ui large button">I'm Still Quite Interested</a>
+          <a class="ui large button">I'm Still Quite Interested</a>-->
         </div>
       </div>
 
@@ -376,29 +416,21 @@
             class="ui stackable inverted divided equal height stackable grid"
           >
             <div class="three wide column">
-              <h4 class="ui inverted header">About</h4>
+              <h4 class="ui inverted header">Sobre</h4>
               <div class="ui inverted link list">
                 <a href="#" class="item">Sitemap</a>
-                <a href="#" class="item">Contact Us</a>
-                <a href="#" class="item">Religious Ceremonies</a>
-                <a href="#" class="item">Gazebo Plans</a>
+                <a href="#" class="item">Contato</a>
               </div>
             </div>
             <div class="three wide column">
-              <h4 class="ui inverted header">Services</h4>
+              <h4 class="ui inverted header">Serviços</h4>
               <div class="ui inverted link list">
-                <a href="#" class="item">Banana Pre-Order</a>
-                <a href="#" class="item">DNA FAQ</a>
-                <a href="#" class="item">How To Access</a>
-                <a href="#" class="item">Favorite X-Men</a>
+                <a href="#" class="item">CFTV</a>
+                <a href="#" class="item">Monitoramento</a>
               </div>
             </div>
             <div class="seven wide column">
-              <h4 class="ui inverted header">Footer Header</h4>
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
+              <h4 class="ui inverted header">© 2019 - Albitec</h4>
             </div>
           </div>
         </div>
